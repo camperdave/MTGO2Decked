@@ -1,5 +1,5 @@
 const MIME_TYPE = 'text/csv';
-const SKIP_SETS = ['DPA', 'EVENT', 'VAN'];
+const SKIP_SETS = ['DPA', 'EVENT', 'VAN', ' '];
 
 function handleFileSelect(evt) {	
 	var files = evt.target.files; // FileList object
