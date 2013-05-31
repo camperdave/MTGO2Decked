@@ -53,8 +53,8 @@ function handleFileSelect(evt) {
 				}
 
 				csv_out = + csv_out + id[0] + ',' + id[1] + ',' + value.nonfoil + ',' + value.foil + '\n'
+				console.log(csv_out)
 			})
-
 			var bb = new Blob([csv_out], {type: MIME_TYPE});
 
 			$('#csvFile').html("Successfully processed CSV File: " + prefs.csvName);
