@@ -26,11 +26,13 @@ function handleFileSelect(evt) {
 						have_cards[card_id].nonfoil = 0;
 					}
 
+					var count_header = (card_line["Quantity"] === undefined) ? 'Online' : 'Quantity';
+
 					if(card_line['Premium'] == 'Yes') {
-						have_cards[card_id].foil += parseInt(card_line["Quantity"]);
+						have_cards[card_id].foil += parseInt(card_line[count_header]);
 					}
 					else {
-						have_cards[card_id].nonfoil += parseInt(card_line["Quantity"]);
+						have_cards[card_id].nonfoil += parseInt(card_line[count_header]);
 					}
 
 					if(set_trans[card_line["Set"]] === undefined) {
