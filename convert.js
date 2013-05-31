@@ -13,9 +13,7 @@ function handleFileSelect(evt) {
 			prefs.csv = reader.result;
 			prefs.csvName = name;
 
-			var csv_cards = $.csv2Dictionary(prefs.csv,{
-				'delimiter' : '"'
-			});
+			var csv_cards = $.csv.toObjects(prefs.csv);
 			var have_cards = {};
 			for(i = 0; i < csv_cards.length; i++) {
 				var card_line = csv_cards[i];
@@ -52,8 +50,7 @@ function handleFileSelect(evt) {
 					id[0] = '"' + id[0] + '"';
 				}
 
-				csv_out = + csv_out + id[0] + ',' + id[1] + ',' + value.nonfoil + ',' + value.foil + '\n'
-				console.log(csv_out)
+				csv_out = csv_out + id[0] + ',' + id[1] + ',' + value.nonfoil + ',' + value.foil + '\n'
 			})
 			var bb = new Blob([csv_out], {type: MIME_TYPE});
 
