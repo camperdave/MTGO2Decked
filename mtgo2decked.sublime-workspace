@@ -1,0 +1,590 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"card",
+				"card_line"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"cost",
+				"cost_to_buy"
+			],
+			[
+				"to",
+				"total_cost_to_finish"
+			],
+			[
+				"lo",
+				"localStorage"
+			],
+			[
+				"dis",
+				"disknumber"
+			],
+			[
+				"title",
+				"titlesort"
+			],
+			[
+				"al",
+				"albumsort"
+			],
+			[
+				"trackn",
+				"tracknumber"
+			],
+			[
+				"album",
+				"albumartistsort"
+			],
+			[
+				"or",
+				"origFile"
+			],
+			[
+				"com",
+				"comment_id"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
+				"par",
+				"parseInt"
+			],
+			[
+				"co",
+				"commentID"
+			],
+			[
+				"comm",
+				"comment"
+			],
+			[
+				"pare",
+				"parentID"
+			],
+			[
+				"sel",
+				"sel_old_comment_parent"
+			],
+			[
+				"se",
+				"sel_old_comment_parent"
+			],
+			[
+				"comment_b",
+				"comment_body"
+			],
+			[
+				"parent",
+				"parent_id"
+			],
+			[
+				"story",
+				"story_id"
+			],
+			[
+				"html",
+				"htmlentities"
+			],
+			[
+				"req",
+				"required"
+			],
+			[
+				"login",
+				"login_shim"
+			],
+			[
+				"ht",
+				"htmlentities"
+			],
+			[
+				"outl",
+				"outline-width"
+			],
+			[
+				"out",
+				"outline-style"
+			],
+			[
+				"htm",
+				"html_string"
+			],
+			[
+				"stor",
+				"story"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"ref",
+				"refreshList"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"user",
+				"user_list"
+			],
+			[
+				"sha",
+				"shared_users"
+			],
+			[
+				"seriali",
+				"serialized"
+			],
+			[
+				"real",
+				"realFilePath"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"upl",
+				"uploadFile"
+			],
+			[
+				"head",
+				"header	<header>"
+			],
+			[
+				"file_li",
+				"file_list"
+			],
+			[
+				"gr",
+				"gross_file_name"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"file_list",
+				"file_list_array"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"he",
+				"header	<header>"
+			],
+			[
+				"g",
+				"gross_file_name"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"fron",
+				"front-title"
+			],
+			[
+				"Birthday",
+				"BirthdayCard"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 30,
+				"line_ending": "Windows",
+				"name": "<!DOCTYPE html>"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nEmmet:\n-----\n\n  Thank you for installing Emmet -- a toolkit that can greatly improve your workflow. Note that this plugin automatically downloads and installs PyV8 binary (see status bar message). \n  \n  ******************************\n  Please restart editor \n  to finish installation process \n  after PyV8 was downloaded.\n  ******************************\n  \n  Tab key handler\n  ==========================\n  \n  By default, Emmet allows you to expand abbreviations with Tab key in HTML, XML, HAML and CSS/SASS/LESS/Stylus documents. As a side effect, you can’t use some of your ST2 snippets.\n  \n  Please read https://github.com/sergeche/emmet-sublime#tab-key-handler about how Tab handler works and how to tweak its behavior to match your needs.\n  \n  Enter key\n  ==========================\n  \n  In HTML and XML documents, Emmet overrides Enter key to insert formatted line breaks between opening and closing tags. In some cases it will break character input (for example, in Japanese language).\n  \n  To disable Enter key handler, simply add the following option in your user's Preferences file:\n  \n  \"disable_formatted_linebreak\": true\n  \n  Actions shortcuts\n  ==========================\n  \n  Emmet has a number of actions with keyboard shortcuts that may override ones you're using commonly (for example, Ctrl-E or Ctrl-Down). Please read the project main page to get list of available actions and keyboard shortcuts and how to disable them:\n  https://github.com/sergeche/emmet-sublime\n  \n  Documentation and examples:\n  http://emmet.io\n  \n  ------------------------------\n  Follow me on Twitter: @emmetio\n  ------------------------------\n  \n",
+			"settings":
+			{
+				"buffer_size": 1692,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "Packages/User/Open In Chrome.sublime-build",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"htmlprettify",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/David/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/David/KOLMafia/Chit.ReadMe.Txt",
+		"/H/Projects/MTGO-DeckFinder/mtgo-deckfinder.css",
+		"/C/Users/David/AppData/Roaming/Sublime Text 2/Packages/HtmlTidy/HtmlTidy.sublime-settings",
+		"/C/Users/David/AppData/Roaming/Sublime Text 2/Packages/User/HtmlTidy.sublime-settings",
+		"/C/Users/David/AppData/Roaming/Sublime Text 2/Packages/HtmlTidy/README.md",
+		"/H/Projects/MTGO-DeckFinder/options.js",
+		"/H/Projects/DaveTag/davetag.bat",
+		"/H/Projects/DaveTag/davetag.py",
+		"/H/MTGO/Decks/Standard/Bad Enchantment Aggro 3.txt",
+		"/H/MTGO/Decks/Standard/Bad Enchantment Aggro 4.txt",
+		"/H/Projects/MTGO-DeckFinder/.gitignore",
+		"/H/Projects/MTGO-DeckFinder/background.js",
+		"/H/Projects/MTGO-DeckFinder/content.js",
+		"/H/Projects/MTGO-DeckFinder/icon.png",
+		"/H/Projects/MTGO-DeckFinder/icon128.png",
+		"/H/Projects/MTGO-DeckFinder/jquery.csv-0.6.min.js",
+		"/H/Projects/MTGO-DeckFinder/jquery-1.7.2.min.js",
+		"/H/Projects/MTGO-DeckFinder/LICENSE.txt",
+		"/H/Projects/MTGO-DeckFinder/manifest.json",
+		"/H/Projects/MTGO-DeckFinder/options.html",
+		"/H/Projects/DaveTag/keys.txt",
+		"/H/Projects/DaveTag/listkeys.py",
+		"/C/Users/David/AppData/Roaming/beetsconfig.ini",
+		"/H/Projects/DaveTag/log.txt",
+		"/H/Projects/DaveTag/keys-mp4.txt",
+		"/C/Users/David/Downloads/DevSamples/jquery-require-sample/webapp/scripts/main.js",
+		"/F/Emulators/MAME/cfg/default.cfg",
+		"/F/Emulators/HyperSpin/EULA - READ ME.txt",
+		"/F/Emulators/HyperSpin/HyperLaunch.ahk",
+		"/C/Users/David/KOLMafia/scripts/Wossname.ash",
+		"/C/Users/David/Desktop/New Text Document.txt",
+		"/C/Users/David/Documents/IISExpress/config/applicationhost.config",
+		"/C/Users/David/Downloads/DevSamples/jquery-require-sample/webapp/scripts/require-jquery.js",
+		"/C/Users/David/Downloads/DevSamples/jquery-require-sample/webapp/scripts/jquery.alpha.js",
+		"/C/Users/David/Downloads/DevSamples/jquery-require-sample/webapp/scripts/jquery.beta.js",
+		"/H/School/RapidProto/noobCal/noobCal/client/js/listEvents.js",
+		"/C/Users/David/AppData/Local/Apps/2.0/RWKE083M.GTL/X7AZLNQ4.9T2/mtgo..tion_1ad988e60282d0d8_0003.0004_ce82aaeee0a4c35a/MTGO.exe",
+		"/C/Users/David/Downloads/fix-basement-monsters.patch",
+		"/F/Emulators/MAME/roms/dir.txt",
+		"/C/Users/David/KOLMafia/scripts/networth_pricegun.ash",
+		"/C/Users/David/Downloads/VxJasonxV-emoji-for-pidgin-b62f9aa/VxJasonxV-emoji-for-pidgin-b62f9aa/README",
+		"/C/Program Files/WindowsApps/57100Goheer.MyTiles_2.0.0.3_x64__s6gg0ptmhrgye/Pages/StaticTiles.xaml",
+		"/C/Users/David/KOLMafia/scripts/EatDrink.ash",
+		"/C/Users/David/KOLMafia/scripts/pvpCloset.ash",
+		"/C/Users/David/KOLMafia/data/vars_camperdave.txt",
+		"/C/Users/David/Downloads/DevSamples/jquery-require-sample/webapp/scripts/app.build.js",
+		"/C/Program Files/OblyTile/00000000/resources.pri",
+		"/C/Program Files/OblyTile/00000000/Launcher.vbs",
+		"/C/Users/David/AppData/Local/Microsoft/Windows/appsFolder.itemdata-ms",
+		"/C/Users/David/Desktop/OblyTile_Debug.txt",
+		"/C/Users/David/KOLMafia/scripts/ascensionChecklist.ash",
+		"/C/Users/David/KOLMafia/scripts/networth.ash",
+		"/H/School/RapidProto/Module3/index.php",
+		"/H/School/RapidProto/Module3/js/listStory.js",
+		"/C/Users/David/garden.html",
+		"/H/School/RapidProto/Module3/js/getStory.js",
+		"/C/Users/David/KOLMafia/relay/charpane.ash",
+		"/I/Users/Dave/kolmafia/scripts/ascensionChecklist.ash",
+		"/F/Emulators/ePSXe/plugins/manual-pete-setting.txt",
+		"/F/School/RapidProto/Module3/css/list.css",
+		"/F/School/RapidProto/Module3/userAdmin.php",
+		"/F/School/RapidProto/Module3/js/submitUser.js",
+		"/F/School/RapidProto/Module3/editStory.php",
+		"/F/School/RapidProto/Module3/js/submitStory.js",
+		"/F/School/RapidProto/Module3/login.php",
+		"/F/School/RapidProto/Module3/comments.php",
+		"/F/School/RapidProto/FileXfer/share.php",
+		"/F/School/RapidProto/Module3/js/getComments.js",
+		"/F/School/RapidProto/FileXfer/list.php",
+		"/F/School/RapidProto/Module3/userLookup.php",
+		"/F/School/RapidProto/Module3/showStory.php",
+		"/F/School/RapidProto/Module3/js/submitComment.js",
+		"/F/School/RapidProto/Module3/js/showStory.js",
+		"/F/School/RapidProto/Module3/js/lookupUser.js",
+		"/F/School/RapidProto/Module3/index.php",
+		"/F/School/RapidProto/Module3/js/getStory.js",
+		"/F/School/RapidProto/Module3/logout.php",
+		"/F/School/RapidProto/FileXfer/inc/checkLogin.php",
+		"/F/School/RapidProto/Module3/userLogin.php",
+		"/F/School/RapidProto/Module3/js/submitLogin.js",
+		"/F/School/RapidProto/Module3/getComments.php",
+		"/F/School/RapidProto/Module3/newUser.php",
+		"/F/School/RapidProto/FileXfer/logout.php",
+		"/F/School/RapidProto/FileXfer/login.php",
+		"/F/School/RapidProto/FileXfer/delete.php",
+		"/F/School/RapidProto/Module3/stories.php",
+		"/F/School/RapidProto/Module3/js/listStory.js",
+		"/F/School/RapidProto/Module3/css/story.css",
+		"/F/School/RapidProto/Module3/js/editStory.js",
+		"/F/School/RapidProto/Module3/savestory.php",
+		"/C/Users/Dave/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/F/Dropbox/TKE Site Stuff/330_module3/stories.php",
+		"/F/School/RapidProto/FileXfer/file.php",
+		"/C/Users/Dave/AppData/Roaming/Sublime Text 2/Packages/EC2Upload/upload.bat",
+		"/C/Users/Dave/AppData/Roaming/Sublime Text 2/Packages/EC2Upload/EC2Upload.sublime-build",
+		"/F/School/RapidProto/FileXfer/js/jquery-1.8.2.js",
+		"/F/Ally Mill.dek",
+		"/F/School/RapidProto/FileXfer/errorNoName.html",
+		"/F/School/RapidProto/FileXfer/upload.php",
+		"/F/Delver's Kiln 7 (1).dek",
+		"/F/Mono Blue Post rev2.dek",
+		"/F/School/RapidProto/FileXfer/info.php",
+		"/F/School/RapidProto/FileXfer/inc/fileList.php",
+		"/F/School/RapidProto/FileXfer/test.txt",
+		"/F/Delver's Kiln 7.dek",
+		"/F/Standard Budget Pox.dek",
+		"/F/School/RapidProto/FileXfer/checkLogin.php",
+		"/F/School/RapidProto/file.php",
+		"/F/School/RapidProto/FileXfer/login.html",
+		"/H/330/BirthdayCard/BirthdayCard.css",
+		"/H/330/BirthdayCard/BirthdayCard.js",
+		"/H/330/BirthdayCard/BirthdayCard.html",
+		"/H/330/BirthdayCard/jquery-1.8.1.js",
+		"/H/ST2/Data/Packages/User/OpenInChrome.sublime-build",
+		"/H/330/BirthdayCard/BirthdayCard.sublime-project",
+		"//warehouse.cec.wustl.edu/home/links/dal4/Downloads/hello-TA.txt",
+		"//warehouse.cec.wustl.edu/home/links/dal4/ST2/Data/Packages/EC2Upload/upload.bat",
+		"//warehouse.cec.wustl.edu/home/links/dal4/test-will.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console.l",
+			"localStorage[p",
+			"track",
+			"album",
+			"albumartist",
+			"H:\\Music\\__",
+			"___",
+			"mapping",
+			"html",
+			"staticFileModule",
+			"html",
+			"stats",
+			"login_shim",
+			"public ",
+			"require('checkLogin.php');"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"logged_in",
+			"$fe->"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 30,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<!DOCTYPE html>",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 1692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1692,
+								1692
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 161.0,
+	"status_bar_visible": true
+}
