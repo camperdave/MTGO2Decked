@@ -20,7 +20,7 @@
 ### **KNOWN BROKEN SETS AND CARDS**
 	*Promotional Cards (*Pending support by Decked Builder, I've done all I can*)
 	*Duel Decks: Mirrodin Pure vs New Phyrexia (*Pending support by Decked Builder, I've done all I can*)
-	*Cards with Commas in the names (working on this, hopefully forcing delimiter option works)
+	*Cards with Commas in the names (May be fixed, think I was the problem after all)
 
 ### What if it breaks  
 
