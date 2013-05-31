@@ -1,4 +1,5 @@
 const MIME_TYPE = 'text/csv';
+const SKIP_SETS = ['DPA', 'EVENT', 'VAN'];
 
 function handleFileSelect(evt) {	
 	var files = evt.target.files; // FileList object
@@ -17,7 +18,7 @@ function handleFileSelect(evt) {
 			var have_cards = {};
 			for(i = 0; i < csv_cards.length; i++) {
 				var card_line = csv_cards[i];
-				if (card_line['Set'] != 'DPA') {
+				if (SKIP_SETS.indexOf(card_line['Set']) === -1) {
 					var card_id = card_line["Card Name"] + "~" + set_trans[card_line["Set"]];
 					if (have_cards[card_id] == null) {
 						have_cards[card_id] = {};
@@ -31,13 +32,14 @@ function handleFileSelect(evt) {
 					else {
 						have_cards[card_id].nonfoil += parseInt(card_line["Quantity"]);
 					}
-				}
-				if(set_trans[card_line["Set"]] === undefined) {
-					var bad_card = card_line["Card Name"] + " [" + card_line["Set"] + ']' + " - " + card_line["ID #"];
-					console.log(bad_card);
-					$("<li>", {
-						'text' : bad_card
-					}).appendTo("#errorList");
+
+					if(set_trans[card_line["Set"]] === undefined) {
+						var bad_card = card_line["Card Name"] + " [" + card_line["Set"] + ']' + " - " + card_line["ID #"];
+						console.log(bad_card);
+						$("<li>", {
+							'text' : bad_card
+						}).appendTo("#errorList");
+					}
 				}
 			}
 
