@@ -33,6 +33,9 @@ function handleFileSelect(evt) {
 						have_cards[card_id].nonfoil += parseInt(card_line["Quantity"]);
 					}
 				}
+				if(set_trans[card_line["Set"]] === undefined) {
+					console.log(card_line["Card Name"] + " [" + card_line["Set"] + ']' + " - " + card_line["ID #"])
+				}
 			}
 
 			var csv_out = 'Card Name,Cardset,# Owned,# Foil Owned\n';
