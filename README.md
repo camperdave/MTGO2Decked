@@ -5,7 +5,7 @@
 ### Instructions  
 
 1. Open MTGO
-	1. (Log in)
+	1a. (Log in)
 2. Open the Collections tab
 3. Right Click -> Select All
 4. Export Selected Cards
@@ -17,8 +17,10 @@
 10. Click Choose File and select the file you saved from MTGO2Decked
 11. Hit Upload, and wait for the email with your shiny new collection!
 
-### **KNOWN BROKEN SETS**
-Written before the first test. We'll see soon.
+### **KNOWN BROKEN SETS AND CARDS**
+	*Promotional Cards (*Pending support by Decked Builder, I've done all I can*)
+	*Duel Decks: Mirrodin Pure vs New Phyrexia (*Pending support by Decked Builder, I've done all I can*)
+	*Cards with Commas in the names (working on this, hopefully forcing delimiter option works)
 
 ### What if it breaks  
 
