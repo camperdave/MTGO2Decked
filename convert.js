@@ -1,7 +1,6 @@
 const MIME_TYPE = 'text/csv';
 
 function handleFileSelect(evt) {	
-	console.log("GO")
 	var files = evt.target.files; // FileList object
 	
 	f = files[0];
@@ -34,7 +33,11 @@ function handleFileSelect(evt) {
 					}
 				}
 				if(set_trans[card_line["Set"]] === undefined) {
-					console.log(card_line["Card Name"] + " [" + card_line["Set"] + ']' + " - " + card_line["ID #"])
+					var bad_card = card_line["Card Name"] + " [" + card_line["Set"] + ']' + " - " + card_line["ID #"];
+					console.log(bad_card);
+					$("<li>", {
+						'text' : bad_card
+					}).appendTo("#errorList");
 				}
 			}
 
@@ -71,7 +74,5 @@ function handleFileSelect(evt) {
 // Make sure the checkbox checked state gets properly initialized from the
 // saved preference.
 $(document).ready(function () {
-	console.log('READY');
 	$('#csvFile').change(handleFileSelect);
-	console.log("WIRED");
 });
