@@ -13,7 +13,7 @@ function handleFileSelect(evt) {
 			prefs.csv = reader.result;
 			prefs.csvName = name;
 
-			var csv_cards = $.csv.csv2Dictionary(prefs.csv,{
+			var csv_cards = $.csv2Dictionary(prefs.csv,{
 				'delimiter' : '"'
 			});
 			var have_cards = {};
