@@ -20,7 +20,7 @@
 ### **KNOWN BROKEN SETS AND CARDS**
 	*Promotional Cards (*Pending support by Decked Builder, I've done all I can*)
 	*Duel Decks: Mirrodin Pure vs New Phyrexia (*Pending support by Decked Builder, I've done all I can*)
-	*Cards with Commas in the names (May be fixed, think I was the problem after all)
+	*Æther / AEther (Not sure how to deal with the weird AE character.)
 
 ### What if it breaks  
 
