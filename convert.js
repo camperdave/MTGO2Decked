@@ -73,7 +73,7 @@ function handleFileSelect(evt) {
 	})(f.name);
 	
 	// Read in the image file as a data URL.
-	reader.readAsText(f);
+	reader.readAsText(f, 'UTF-8');
 	
 }
 

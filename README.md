@@ -18,9 +18,9 @@
 11. Hit Upload, and wait for the email with your shiny new collection!
 
 ### **KNOWN BROKEN SETS AND CARDS**
-	*Promotional Cards (*Pending support by Decked Builder, I've done all I can*)
-	*Duel Decks: Mirrodin Pure vs New Phyrexia (*Pending support by Decked Builder, I've done all I can*)
-	*Æther / AEther (Not sure how to deal with the weird AE character.)
+*Promotional Cards (*Pending support by Decked Builder, I've done all I can*)
+*Duel Decks: Mirrodin Pure vs New Phyrexia (*Pending support by Decked Builder, I've done all I can*)
+*Æther / AEther (Not sure how to deal with the weird AE character.)
 
 ### What if it breaks  
 
