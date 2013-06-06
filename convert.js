@@ -15,6 +15,7 @@ function handleFileSelect(evt) {
 			prefs.csvName = name;
 
 			var csv_cards = $.csv.toObjects(prefs.csv);
+			console.log("Test Unicode: " + csv_cards[383]['Card Name'])
 			var have_cards = {};
 			for(i = 0; i < csv_cards.length; i++) {
 				var card_line = csv_cards[i];
