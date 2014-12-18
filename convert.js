@@ -47,19 +47,23 @@ function processCSV(results, file) {
 		'data-downloadurl' : [MIME_TYPE, a_download, a_href].join(':'),
 		'draggable' : true
 	}).appendTo('#downloadArea');
-	
+
 	$('#msgOutput').append("<li>Completed processing the file! Download your CSV file above, and upload it at <a href='http://www.mtgo-stats.com/convert_coll/em'>MTGO-Stats</a> to finish your collection file!</li>");
 }
 
 
 $(document).ready(function () {
-	$('#csvFile').parse({
+	$('#btnStart').click(function() {
+		$('#csvFile').parse({
 			config: {
 				header: true,
-				complete: processCSV
+				complete: processCSV,
+				worker: true,
 			},
 			before: function(file, inputElem) {
 				if(file.size === 0) {
+					$("#msgOutpud").append("<li>Skipping " + file.name + " as it is blank!</li>");
+					console.log(file);
 					return {
 						action: "abort",
 						reason: "blank / no file"
@@ -73,5 +77,7 @@ $(document).ready(function () {
 				$('#msgOutput').append("<li>Something error happen. Check Console.Log for now!</li>");
 				console.log("Main JQUERY level error handler: ", err, file, inputElem, reason);
 			}
+		});
 	});
+	
 });
