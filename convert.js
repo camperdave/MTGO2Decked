@@ -1,86 +1,78 @@
 const MIME_TYPE = 'text/csv';
 const SKIP_SETS = ['DPA', 'EVENT', 'VAN', ' '];
 
-function handleFileSelect(evt) {	
-	var files = evt.target.files; // FileList object
-	
-	f = files[0];
+function processCSV(results, file) {
+	var cards = [];
+	// First, parse the CSV list, and build an array of objects that combine foil and non-foil cards.
+	// Fuck performance, we're going to burn space and memory like it's 2014 just in case MTGO does something stupid (seems likely someday)
+	for (var row in results.data) 
+	{
+		var name = row["Card Name"];
+		var setCode = row["Set"];
+		var card_id = name+"~"+setCode;
+		var card = cards[card_id] || { name: name, setCode: setCode, nonFoil: 0, foil: 0 };
+		if (row["Premium"] == "Yes") {
+			card.foil += row["Quantity"];
+		}
+		else {
+			card.nonFoil += row["Quantity"];
+		}
+		cards[card_id] = card;
+	}
 
-	var reader = new FileReader();
 
-	reader.onload = (function makeReaderFunction(name) {
-		return (function() {
-			var prefs = {};
-			prefs.csv = reader.result;
-			prefs.csvName = name;
+	// Then, create a JSON array of objects that store the data in a convert_coll compatible format
+	var outputJSON = [];
+	for (var card in cards) {
+		outputJSON.push({
+			"Card Name"    : card.name,
+			"Cardset"      : set_trans[card.set],				//see table.js for the giant map of set codes.
+			"# Owned"      : card.nonFoil,
+			"# Foil Owned" : card.foil
+		});
+	}
 
-			var csv_cards = $.csv.toObjects(prefs.csv);
-			console.log("Test Unicode: " + csv_cards[383]['Card Name'])
-			var have_cards = {};
-			for(i = 0; i < csv_cards.length; i++) {
-				var card_line = csv_cards[i];
-				if (SKIP_SETS.indexOf(card_line['Set']) === -1) {
-					var card_id = card_line["Card Name"] + "~" + set_trans[card_line["Set"]];
-					if (have_cards[card_id] == null) {
-						have_cards[card_id] = {};
-						have_cards[card_id].foil = 0;
-						have_cards[card_id].nonfoil = 0;
-					}
+	// Next, we convert that JSON object back to CSV
+	var csv = Papa.unparse(outputJSON);
 
-					var count_header = (card_line["Quantity"] === undefined) ? 'Online' : 'Quantity';
+	// Finally, we need to create a blob and create a download link for the user.
+	var blob = new Blob([csv_out], {type: MIME_TYPE});
 
-					if(card_line['Premium'] == 'Yes') {
-						have_cards[card_id].foil += parseInt(card_line[count_header]);
-					}
-					else {
-						have_cards[card_id].nonfoil += parseInt(card_line[count_header]);
-					}
-
-					if(set_trans[card_line["Set"]] === undefined) {
-						var bad_card = card_line["Card Name"] + " [" + card_line["Set"] + ']' + " - " + card_line["ID #"];
-						console.log(bad_card);
-						$("<li>", {
-							'text' : bad_card
-						}).appendTo("#errorList");
-					}
-				}
-			}
-
-			var csv_out = 'Card Name,Cardset,# Owned,# Foil Owned\n';
-
-			$.each(have_cards, function(key, value) {
-				var id = key.split('~');
-
-				if(id[0].indexOf(',') !== -1) {
-					id[0] = '"' + id[0] + '"';
-				}
-
-				csv_out = csv_out + id[0] + ',' + id[1] + ',' + value.nonfoil + ',' + value.foil + '\n'
-			})
-			var bb = new Blob([csv_out], {type: MIME_TYPE});
-
-			$('#csvFile').html("Successfully processed CSV File: " + prefs.csvName);
-			// $('#csvOut').val(csv_out);
-			var a_href = window.URL.createObjectURL(bb);
-			var a_download = 'decked_' + prefs.csvName;
-			$('<a>',{
-				'text' : 'Download CSV File!',
-				'href' : a_href,
-				'download' : a_download,
-				'data-downloadurl' : [MIME_TYPE, a_download, a_href].join(':'),
-				'draggable' : true
-			}).appendTo('#downloadArea');
-		})
-	})(f.name);
-	
-	// Read in the image file as a data URL.
-	reader.readAsText(f, 'UTF-8');
-	
+	var a_href = window.URL.createObjectURL(blob);
+	var a_download = 'decked_' + file.name;
+	$('<a>',{
+		'text' : 'Download CSV File!',
+		'href' : a_href,
+		'download' : a_download,
+		'data-downloadurl' : [MIME_TYPE, a_download, a_href].join(':'),
+		'draggable' : true
+	}).appendTo('#downloadArea');
 }
 
 
-// Make sure the checkbox checked state gets properly initialized from the
-// saved preference.
 $(document).ready(function () {
-	$('#csvFile').change(handleFileSelect);
+	$('#csvFile').parse({
+			config: {
+				header: true,
+				complete: processCSV
+			},
+			before: function(file, inputElem) {
+				if(file.size === 0) {
+					return {
+						action: "abort",
+						reason: "blank / no file"
+					}
+				}
+				else {
+					$("#msgOutput").append("<li>Started processing " + file.name + "!</li>");
+				}
+			},
+			error: function(err, file, inputElem, reason) {
+				$('#msgOutput').append("<li>Something error happen. Check Console.Log for now!</li>");
+				console.log("Main JQUERY level error handler: ", err, file, inputElem, reason);
+			},
+			complete: function() {
+				$('#msgOutput').append("<li>Completed processing the file! Download your CSV file above, and upload it at <a href='http://www.mtgo-stats.com/convert_coll/em'>MTGO-Stats</a> to finish your collection file!</li>");
+			}
+	});
 });
