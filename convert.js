@@ -47,6 +47,8 @@ function processCSV(results, file) {
 		'data-downloadurl' : [MIME_TYPE, a_download, a_href].join(':'),
 		'draggable' : true
 	}).appendTo('#downloadArea');
+	
+	$('#msgOutput').append("<li>Completed processing the file! Download your CSV file above, and upload it at <a href='http://www.mtgo-stats.com/convert_coll/em'>MTGO-Stats</a> to finish your collection file!</li>");
 }
 
 
@@ -70,9 +72,6 @@ $(document).ready(function () {
 			error: function(err, file, inputElem, reason) {
 				$('#msgOutput').append("<li>Something error happen. Check Console.Log for now!</li>");
 				console.log("Main JQUERY level error handler: ", err, file, inputElem, reason);
-			},
-			complete: function() {
-				$('#msgOutput').append("<li>Completed processing the file! Download your CSV file above, and upload it at <a href='http://www.mtgo-stats.com/convert_coll/em'>MTGO-Stats</a> to finish your collection file!</li>");
 			}
 	});
 });
