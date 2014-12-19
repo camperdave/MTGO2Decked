@@ -20,7 +20,7 @@
 ### **KNOWN BROKEN SETS AND CARDS**
 *Promotional Cards (*Pending support by Decked Builder, I've done all I can*)
 *Duel Decks: Mirrodin Pure vs New Phyrexia (*Pending support by Decked Builder, I've done all I can*)
-*Æther / AEther (Not sure how to deal with the weird AE character.)
+*Magic Online Deck Series (*Pending support by Decked Builder, I've done all I can*)
 
 ### What if it breaks  
 

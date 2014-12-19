@@ -17,6 +17,13 @@ function processCSV(results, file) {
 		var name = row["Card Name"];
 		if (typeof name === "undefined" || name === "") continue;				// Skip blank rows.
 
+		//Check if we need to mangle the card's name for the sake of the coll2 format:		
+		// Replace any / in split card names with //
+		name = name.replace('/',' // ');		
+
+		// Replace any Æ with AE
+		name = name.replace('Æ',"AE");
+
 		var setCode = row["Set"];
 		var card_id = name+"~"+setCode;
 		var card = cards[card_id];
@@ -73,8 +80,8 @@ function processCSV(results, file) {
 
 
 $(document).ready(function () {
-	$('#btnStart').click(function() {
-		$('#csvFile').parse({
+	$('#csvFile').change(function() {
+		$(this).parse({
 			config: {
 				header: true,
 				complete: processCSV,
