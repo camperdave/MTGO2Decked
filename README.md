@@ -4,9 +4,8 @@
 
 ### Instructions  
 
-1. Open MTGO
-	1a. (Log in)
-2. Open the Collections tab
+1. Open MTGO and Log in
+2. Open the Collections tab and make sure to select "Show Versions Seperately" under the View dropdown
 3. Right Click -> Select All
 4. Export Selected Cards
 5. Save as a **CSV** file somewhere you can find it
@@ -18,9 +17,11 @@
 11. Hit Upload, and wait for the email with your shiny new collection!
 
 ### **KNOWN BROKEN SETS AND CARDS**
-*Promotional Cards (*Pending support by Decked Builder, I've done all I can*)
-*Duel Decks: Mirrodin Pure vs New Phyrexia (*Pending support by Decked Builder, I've done all I can*)
-*Magic Online Deck Series (*Pending support by Decked Builder, I've done all I can*)
+*Promotional Cards (Pending support by Decked Builder, I've done all I can)
+
+*Duel Decks: Mirrodin Pure vs New Phyrexia (Pending support by Decked Builder, I've done all I can)
+
+*Magic Online Deck Series (Pending support by Decked Builder, I've done all I can)
 
 ### What if it breaks  
 
